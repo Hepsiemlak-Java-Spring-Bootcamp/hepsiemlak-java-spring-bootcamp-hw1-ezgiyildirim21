@@ -1,0 +1,6 @@
+
+** Neden Java'da Çoklu Kalıtım Sağlanmaz?
+
+	- Java, iki nedenden dolayı çoklu kalıtımı desteklemez: Java'da her sınıf, Object sınıfının bir çocuğudur. Birden fazla süper sınıftan miras aldığında, alt sınıf, Object sınıfının özelliğini elde etmek için belirsizlik alır. Ancak, bir sınıf bir veya daha fazla arabirim uygulayabilir, bu da Java'nın çoklu mirasın imkansızlığından kurtulmasına yardımcı olmuştur.
+
+	- Bunun nedeni belirsizliği önlemektir. B sınıfının A ve C sınıfını genişlettiği ve hem A hem de C sınıfının aynı display() yöntemine sahip olduğu bir durumu düşünün. Artık Java derleyicisi hangi görüntüleme yöntemini devralması gerektiğine karar veremez. Böyle bir durumu önlemek için Java'da çoklu kalıtımlara izin verilmez.
